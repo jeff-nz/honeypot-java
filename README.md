@@ -13,4 +13,4 @@
 
 ### To Test
 - Make sure you have deployed the honeypot-java instance.
-- Run the command... `curl -v localhost`
+- Only then you can run the command... `curl -v localhost`
