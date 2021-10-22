@@ -1,0 +1,15 @@
+#!/bin/bash
+
+VOLUME=honeypot-java
+TARGET=honeypot-java-target
+docker volume create --name ${VOLUME}
+docker volume create --name ${TARGET}
+
+docker run --rm -it \
+-v ${VOLUME}:/root/.m2 \
+-w /usr/src/workspace \
+-v ${PWD}:/usr/src/workspace \
+-v ${TARGET}:/usr/src/target \
+-p 80:8080 \
+maven bash -c "mvn clean install && mvn clean package spring-boot:run"
+
