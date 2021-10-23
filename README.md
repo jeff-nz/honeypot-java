@@ -12,5 +12,5 @@
 - Then run the deploy command... `./bin/deploy`
 
 ### To Test
-- Make sure you have deployed the honeypot-java instance.
+- Make sure you have deployed the honeypot-java container.
 - Only then you can run the command... `curl -v localhost`
