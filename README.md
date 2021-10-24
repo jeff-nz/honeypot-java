@@ -13,4 +13,6 @@
 
 ### To Test
 - Make sure you have deployed the honeypot-java container.
-- Only then you can run the command... `curl -v localhost`
+- Only then you can run the command...
+  - `curl -v localhost`
+  - or `curl -v localhost/autodiscover/autodiscover.json?@test.com/owa/?&Email=autodiscover/autodiscover.json%3F@test.com`
