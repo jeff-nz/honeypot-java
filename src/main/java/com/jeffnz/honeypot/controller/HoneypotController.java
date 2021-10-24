@@ -18,7 +18,7 @@ public class HoneypotController {
 
 	private final Logger log = LoggerFactory.getLogger(HoneypotController.class);
 
-	@GetMapping(value = "/*")
+	@GetMapping(value = "/**")
 	public ResponseEntity<StreamingResponseBody> handleRandomGetRequest() {
 		log.info("handleRandomGetRequest() called");
 		return ResponseEntity.ok(honeyPotService.getInfiniteResponse());
