@@ -14,7 +14,7 @@ public class HoneypotService {
 		StreamingResponseBody stream = out -> {
 			while (true) {
 				String msg = "Not Found\n";
-				log.info("handleRandomGetRequest() is rendering - "+ new Date());
+				log.info("has rendered dummy content");
 				out.write(msg.getBytes());
 				out.flush();
 				wait(5);
